@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Mortgage Calculator</title>
+
+<link rel="stylesheet" href="mortgage_calculator.css" type="text/css">
+
+<script src="mortgage_calculator.js"></script>
+
+</head>
+
+<body>
+
+<div class="smp">
+
+<form name=calculator method="POST">
+
+<p>How much money are you borrowing?<br>
+
+    <input type=text onkeypress="return value(event)" name=loan size=10>
+
+    <span class="smp-err" id="loan_error"></span>
+
+</p>
+
+<p>How long is the mortgage term?<br>
+
+    <input type=text onkeypress="return value(event)" name=years size=5>
+
+    <span class="smp-err" id="years_error"></span>
+
+</p>
+
+<p>What is the ROI rate?<br>
+
+    <input type=text onkeypress="return value(event)" name=rate size=5>
+
+    <span class="smp-err" id="rates_error"></span>
+
+</p>
+
+<input type="button" onclick="return payments()" value=Calculate>
+
+<input type="button" onclick="return reset_payments()" value=Reset>
+
+</form>
+
+<small>Enter numbers and decimal points. NO COMMAS OR SMALL CHARACTERS!</small>
+
+<p class="monthPaym-smp" id="mon_pay"></p>
+
+<p class="smp-fremind" id="remind">This is your principal + ROI payment, which is what you need to send to the bank each month. This also needs to budget for insurance, taxes, and if you can't afford a 20% down, a private mortage insurance (PMI) payment is needed. This could raise your payment per month by 50%.</p>
+
+</div>
+
+</body>
+
+</html>

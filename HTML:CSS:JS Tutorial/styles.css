@@ -1,0 +1,33 @@
+h1 {
+
+    background-color: #00FF00;
+
+}
+
+/*
+hover: when near cursor
+active: when user clicks
+visited: when clicked previously
+*/
+
+a:hover { color: blue;}
+
+a:active { color: red;}
+
+a:visited { color: purple;}
+
+body {
+    background-color: #5D8AA8;
+}
+
+div#wrapper{
+
+    margin:auto;
+
+    background-color: white;
+
+    width:800px;
+
+    height:2000px;
+
+}
